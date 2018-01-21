@@ -39,8 +39,11 @@ gqlplus-n.n-n.%{_arch}.src.rpm is also available.
 
 To build gqlplus for another UNIX-like platform, type:
 ```
-$ ./configure
-$ make
+aclocal
+autoconf
+automake --add-missing
+./configure
+make
 ```
 The executable gqlplus will be built in the current directory. 
 
